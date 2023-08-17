@@ -1,0 +1,67 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(135deg, rgb(123, 237, 142), rgb(11, 94, 18));
+    width: 100%;
+    height: 100vh;
+     padding: 4%;
+}
+
+#container h1{
+   
+    font-size: 3rem;
+
+}
+
+#container button {
+    width: 150px;
+    height: 30px;
+    outline: 0;
+    border: 1px solid rgba(13, 118, 39, 0.645) ;
+    border-radius: 20px;
+    margin: 30px 0 20px ;
+    background-color:  rgba(101, 231, 101, 0.816);
+    transition: 0.1s;
+   
+
+}
+#container button:hover {
+    scale: 1.1;
+    background-color: rgba(0, 0, 0, 0.04);
+}
+.note-container{
+    display: flex;
+    flex-direction: column;
+
+    padding: 20px;
+    margin: 20px;
+    gap: 20px;
+}
+.note-box{
+    position: relative;
+    background-color: aliceblue;
+    width: 500px;
+    min-height: 150px;
+    height: auto;
+    border-radius: 30px;
+    padding: 30px;
+    box-shadow: rgba(0, 0, 0, 0.418) 1px 1px 4px 4px;
+}
+.note-box img {
+    width: 35px;
+    position: absolute;
+    bottom:25px;
+    right: 25px;
+    transition: 0.1s;
+    border-radius: 50%;
+}
+.note-box img:hover {
+    scale: 1.2;
+
+}

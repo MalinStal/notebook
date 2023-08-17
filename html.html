@@ -1,0 +1,59 @@
+¨<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .red {
+            color: red;
+
+        }
+
+        .blue {
+            color: blue;
+        }
+
+        .big {
+            font-weight: 900;
+        }
+
+        .style {
+            font-size: x-large;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="style"> hej där alla glada</div>
+    <div class="style"> hej där alla glada</div>
+    <div class="style"> hej där alla glada</div>
+    <div class="style"> hej där alla glada</div>
+
+    <script>
+
+        const div = document.querySelectorAll('.style');
+        div.forEach((element) => {
+        element.classList.add('blue');
+        });
+       
+    
+
+        //övar på localStorage. kan ej spara annat än strängar i storage.
+        //därför behöver man göra om input till json och sedan tillbaka till JS kod i spara och hämtning från storage. 
+ 
+        let myObj = {
+            name: "malin",
+            age: 28,
+           
+        }
+        
+        let myObjJson = JSON.stringify(myObj);
+        localStorage.setItem("myObj", myObjJson);
+        let myObjNotJson = JSON.parse(localStorage.getItem("myObj")) 
+        
+        console.log(myObjNotJson, myObjJson)
+
+    </script>
+</body>
+</html>
